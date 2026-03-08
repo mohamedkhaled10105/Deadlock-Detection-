@@ -17,6 +17,7 @@ int main()
 
     int E[10];
     int C[10][10];
+    int R[10][10];
 
     for(int i = 0; i < m; i++)
         file >> E[i];
@@ -24,6 +25,10 @@ int main()
     for(int i = 0; i < n; i++)
         for(int j = 0; j < m; j++)
             file >> C[i][j];
+
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < m; j++)
+            file >> R[i][j];
 
     return 0;
 }
