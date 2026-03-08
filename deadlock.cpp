@@ -16,9 +16,14 @@ int main()
     file >> n >> m;
 
     int E[10];
+    int C[10][10];
 
     for(int i = 0; i < m; i++)
         file >> E[i];
+
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < m; j++)
+            file >> C[i][j];
 
     return 0;
 }
