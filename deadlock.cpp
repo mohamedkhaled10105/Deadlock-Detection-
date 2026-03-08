@@ -18,6 +18,7 @@ int main()
     int E[10];
     int C[10][10];
     int R[10][10];
+    int A[10];
 
     for(int i = 0; i < m; i++)
         file >> E[i];
@@ -29,6 +30,16 @@ int main()
     for(int i = 0; i < n; i++)
         for(int j = 0; j < m; j++)
             file >> R[i][j];
+
+    for(int j = 0; j < m; j++)
+    {
+        int sum = 0;
+
+        for(int i = 0; i < n; i++)
+            sum += C[i][j];
+
+        A[j] = E[j] - sum;
+    }
 
     return 0;
 }
