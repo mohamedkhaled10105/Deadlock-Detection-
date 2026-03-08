@@ -13,11 +13,12 @@ int main()
     }
 
     int n, m;
-
     file >> n >> m;
 
-    cout << "Processes: " << n << endl;
-    cout << "Resources: " << m << endl;
+    int E[10];
+
+    for(int i = 0; i < m; i++)
+        file >> E[i];
 
     return 0;
 }
